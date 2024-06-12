@@ -1,0 +1,25 @@
+﻿@model PantryItem
+
+<h3>@Model.ItemName Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Item ID</th>
+        <th>Item Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        
+    </tr>
+    <tr>
+        <td>@Model.ItemID</td>
+        <td>@Model.ItemName</td>
+        <td>@Model.Category</td>
+        <td>@Model.Quantity</td>
+        <td>@Model.Unit</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/PantryItem/UpdatePantryItem/@Model.ItemID">Update this Item</a>
+</div>

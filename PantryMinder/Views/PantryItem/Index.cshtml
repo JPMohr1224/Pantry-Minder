@@ -1,0 +1,26 @@
+﻿@model IEnumerable<PantryItem>
+
+<h2>Pantry Items</h2>
+<table class="table">
+    <tr>
+        <th>ID#</th>
+        <th>Item Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        
+    </tr>
+
+    @foreach (var pantryitem in @Model)
+    {
+        <tr>
+            <td><a href=/PantryItem/ViewPantryItem/@pantryitem.ItemID>@pantryitem.ItemID</a></td>
+            <td>@pantryitem.ItemName</td>
+            <td>@pantryitem.Category</td>
+            <td>@pantryitem.Quantity</td>
+            <td>@pantryitem.Unit</td>
+           
+        </tr>
+    }
+
+</table>
