@@ -18,5 +18,17 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url(https://t4.ftcdn.net/jpg/06/51/39/83/240_F_651398347_xPZmSZzteM7UuywvuRyOxWBgSWqYskkx.jpg);
+    background-size: 100%;
+}
+
+#pantryback {
+    width: 100%;
+    
+}
+
+.display-4 {
+    color: red;
+    
 }

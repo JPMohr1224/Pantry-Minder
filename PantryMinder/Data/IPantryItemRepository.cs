@@ -11,6 +11,8 @@ namespace PantryMinder
         public IEnumerable<PantryItem> GetAllPantryItems();
         PantryItem GetPantryItem(int id);
         void UpdatePantryItem(PantryItem pantryitem);
+        public void AddPantryItem(PantryItem pantryitemToInsert);
+        public void DeletePantryItem(PantryItem pantryitem);
     }
 }
 

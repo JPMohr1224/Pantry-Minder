@@ -48,6 +48,24 @@ namespace PantryMinder.Controllers
 
             return RedirectToAction("ViewPantryItem", new { id = pantryitem.ItemID });
         }
+
+        public IActionResult AddPantryItem(PantryItem pantryitemToAdd)
+        {
+
+            return View(pantryitemToAdd);
+        }
+
+        public IActionResult AddPantryItemToDatabase(PantryItem pantryitem)
+        {
+            repo.AddPantryItem(pantryitem);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DeletePantryItem(PantryItem pantryitem)
+        {
+            repo.DeletePantryItem(pantryitem);
+            return RedirectToAction("Index");
+        }
     }
 }
 

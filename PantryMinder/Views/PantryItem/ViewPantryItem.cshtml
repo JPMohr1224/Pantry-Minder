@@ -23,3 +23,12 @@
 <div style="display: block">
     <a href="/PantryItem/UpdatePantryItem/@Model.ItemID">Update this Item</a>
 </div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeletePantryItem", "PantryItem", "Post"))
+    {
+        <input type="hidden" asp-for="ItemID" value="@Model.ItemID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this pantry item" />
+    }
+</div>

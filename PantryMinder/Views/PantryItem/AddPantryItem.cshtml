@@ -1,0 +1,24 @@
+﻿@model PantryItem
+
+<h2>Create a New Pantry Item</h2>
+
+@using (Html.BeginForm("AddPantryItemToDatabase", "PantryItem", "Post"))
+{
+    <input asp-for="ItemID" type="hidden" value="" />
+
+    <label asp-for="ItemName" class="control-label">Item Name</label>
+    <input type="text" name="ItemName" class="form-control" value="" />
+
+    <label asp-for="Category" class="control-label">Category</label>
+    <input type="text" step="0.01" name="Category" class="form-control" value=""/>
+
+    <label asp-for="Quantity" class="control-label">Quantity</label>
+    <input type="number" step="1.10" name="Quantity" class="form-control" />
+
+    <label asp-for="Unit" class="control-label">Unit</label>
+    <input type="text"  name="Unit" class="form-control" value=""/>
+
+
+
+    <input type="submit" value="Create Product" class="btn btn-primary" />
+}
