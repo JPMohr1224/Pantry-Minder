@@ -47,7 +47,11 @@ namespace PantryMinder
             
         }
 
-       
+        public IEnumerable<PantryItem> SearchPantryItem(string searchString)
+        {
+            return _conn.Query<PantryItem>("SELECT * FROM PANTRYITEMS WHERE (ItemName LIKE @itemname) OR (Category LIKE @category);",
+                new { itemname = '%' + searchString + '%', category = '%' + searchString + '%' });
+        }
     }
 }
 

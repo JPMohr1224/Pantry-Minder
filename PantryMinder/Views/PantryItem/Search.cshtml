@@ -1,19 +1,21 @@
 ﻿@model IEnumerable<PantryItem>
 
+
 <h2 class="h2index">Pantry Items</h2>
 
 @using (Html.BeginForm("Search", "PantryItem", FormMethod.Get))
-        {
-            <p>
-                Find By Name or Category @Html.TextBox("searchString")
-                <input type="submit" value="search"/>
-            </p>
-        }
+{
+    <p>
+        Find By Name @Html.TextBox("searchString")
+        <input type="submit" value="search" />
+    </p>
+}
 
 
-<div style="display: inline-flex">
-    <a class="btn" href="/PantryItem/AddPantryItem/">Add a New Pantry Item</a>
+<div style="display: block">
+    <a href="/PantryItem/AddPantryItem/">Add a New Pantry Item</a>
 </div>
+
 
 <table class="table">
     <tr>
@@ -22,8 +24,8 @@
         <th>Category</th>
         <th>Quantity</th>
         <th>Unit</th>
-        
-        
+
+
     </tr>
 
     @foreach (var pantryitem in @Model)
@@ -34,9 +36,10 @@
             <td>@pantryitem.Category</td>
             <td>@pantryitem.Quantity</td>
             <td>@pantryitem.Unit</td>
-            
+
 
         </tr>
     }
 
 </table>
+

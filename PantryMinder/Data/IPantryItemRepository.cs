@@ -13,6 +13,8 @@ namespace PantryMinder
         void UpdatePantryItem(PantryItem pantryitem);
         public void AddPantryItem(PantryItem pantryitemToInsert);
         public void DeletePantryItem(PantryItem pantryitem);
+        public IEnumerable<PantryItem> SearchPantryItem(string searchString);
+    
     }
 }
 

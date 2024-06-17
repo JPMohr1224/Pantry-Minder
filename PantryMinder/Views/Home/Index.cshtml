@@ -1,10 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<img id="pantryback" src="https://t4.ftcdn.net/jpg/06/51/39/83/240_F_651398347_xPZmSZzteM7UuywvuRyOxWBgSWqYskkx.jpg" />
-<div class="text-center" >
+
+<div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
- 
+    <p>Pantry Minder is here to help you remember what you already have in the cubbord and what you need to stock up on!</p>
+    <p>Lets get started!</p>
+
+    <a class="nav-link text-light" asp-area="" asp-controller="PantryItem" asp-action="Index">Look inside for your Pantry Items</a>
+    <p>or you can search here for a Panty Item by name or category</p>
+    @using (Html.BeginForm("Search", "PantryItem", FormMethod.Get))
+    {
+        <p>
+            Find By Name @Html.TextBox("searchString")
+            <input type="submit" value="search" />
+        </p>
+    }
+    
 </div>
 

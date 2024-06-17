@@ -37,7 +37,7 @@ namespace PantryMinder.Controllers
             PantryItem pantryitem = repo.GetPantryItem(id);
             if (pantryitem == null)
             {
-                return View("ProductNotFound");
+                return View("Pantry Item Not Found");
             }
             return View(pantryitem);
         }
@@ -65,6 +65,12 @@ namespace PantryMinder.Controllers
         {
             repo.DeletePantryItem(pantryitem);
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Search(string searchString)
+        {
+            var searchResults = repo.SearchPantryItem(searchString);
+            return View(searchResults);
         }
     }
 }
