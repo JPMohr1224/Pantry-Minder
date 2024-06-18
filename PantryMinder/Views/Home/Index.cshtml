@@ -8,11 +8,11 @@
     <p>Lets get started!</p>
 
     <a class="nav-link text-light" asp-area="" asp-controller="PantryItem" asp-action="Index">Look inside for your Pantry Items</a>
-    <p>or you can search here for a Panty Item by name or category</p>
+    <p>or you can search here for a Pantry Item by name or category</p>
     @using (Html.BeginForm("Search", "PantryItem", FormMethod.Get))
     {
         <p>
-            Find By Name @Html.TextBox("searchString")
+            Find By Name or Category @Html.TextBox("searchString")
             <input type="submit" value="search" />
         </p>
     }
