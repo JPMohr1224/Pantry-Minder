@@ -17,9 +17,9 @@ Future plans for this project include developing its responsiveness to device in
 <strong>C#</strong>: Programming language used for application development.<br/>
 <strong>ASP.NET Core MVC</strong>: Framework for building web applications and APIs.<br/>
 <strong>JavaScript</strong>: Programing language used for application development. <br/>
-<strong>Dapper</strong>: Lightweight ORM for data access.<br/><br/>
+<strong>Dapper</strong>: Lightweight ORM for data access.<br/>
 
-<strong>MySQL</strong>: Relational database management system for storing video game data.<br/>
+<strong>MySQL</strong>: Relational database management system for storing video game data.<br/><br/>
 <h3>Screencaptures</h3>
 
 <img width="1728" alt="Screenshot 2024-06-18 at 12 13 16 PM" src="https://github.com/JPMohr1224/Pantry-Minder/assets/167551412/acc1f698-6be3-404d-8fe2-e43c2595e02e"><br/>
