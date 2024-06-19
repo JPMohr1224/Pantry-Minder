@@ -16,7 +16,7 @@ Future plans for this project include developing its responsiveness to device in
 <h2>Technologies Used</h2>
 <strong>C#</strong>: Programming language used for application development.<br/>
 <strong>ASP.NET Core MVC</strong>: Framework for building web applications and APIs.<br/>
-
+<strong>JavaScript</strong>: Programing language used for application development. <br/>
 <strong>Dapper</strong>: Lightweight ORM for data access.<br/><br/>
 
 <strong>MySQL</strong>: Relational database management system for storing video game data.<br/>
