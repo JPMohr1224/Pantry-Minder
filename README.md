@@ -1,3 +1,5 @@
+<h1> Pantry Minder Project</h1>
+
 This Pantry Minder project was developed to assist in pantry and kitchen inventory and organizing. 
 I frequently finding myself shopping and buying products only to return home and realize that I already posses multiple.
 The project uses a MySql Database, ASP.Net MVC and Dapper.
