@@ -2,17 +2,17 @@
 
 This Pantry Minder project was developed to assist in pantry and kitchen inventory and organizing. 
 I frequently finding myself shopping and buying products only to return home and realize that I already posses multiple.
-The project uses a MySql Database, ASP.Net MVC and Dapper.
+The project uses a MySQL Database, ASP.Net MVC and Dapper.
 This website in its first stage will allow all CRUD functions.
 The user has the ability to add to the pantry items database, view listings, update names, quantities and sizes and also delete products.
 The user can also search by the name of the pantry item or the catagory of the item.
 Future plans for this project include developing its responsiveness to device interface, adding a "Shopping List" feature.
 <br/>
 <h2>Features</h2>
-<strong>Create</strong>: Add new video games to the database.<br/>
-<strong>Read</strong>: View details of existing video games.<br/>
-<strong>Update</strong>: Edit information about existing video games.<br/>
-<strong>Delete</strong>: Remove video games from the database.<br/><br/>
+<strong>Create</strong>: Add new pantry items to the database.<br/>
+<strong>Read</strong>: View details of existing pantry items.<br/>
+<strong>Update</strong>: Edit information about existing pantry items.<br/>
+<strong>Delete</strong>: Remove pantry items from the database.<br/><br/>
 <h2>Technologies Used</h2>
 <strong>C#</strong>: Programming language used for application development.<br/>
 <strong>ASP.NET Core MVC</strong>: Framework for building web applications and APIs.<br/>
