@@ -12,8 +12,8 @@
     @using (Html.BeginForm("Search", "PantryItem", FormMethod.Get))
     {
         <p>
-            Find By Name or Category @Html.TextBox("searchString")
-            <input type="submit" value="search" />
+            @Html.TextBox("searchString", null, new { @placeholder = "Name or Category" })
+            <input class="btn" type="submit" value="Search" >
         </p>
     }
     

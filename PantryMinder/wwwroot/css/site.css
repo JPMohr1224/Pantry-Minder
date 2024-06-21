@@ -19,19 +19,23 @@ body {
     background-image: url(https://t4.ftcdn.net/jpg/06/51/39/83/240_F_651398347_xPZmSZzteM7UuywvuRyOxWBgSWqYskkx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 1;
     background-color: azure;
-    color: lightyellow;
-   
+    color: darkslateblue;
    
 }
 
-.text-center {
-    text-shadow: 2px 2px black;
+.pb-3 {
+    text-shadow: 1px 1px black;
+    background-color: lightsteelblue;
+    opacity: 1;
+    margin-bottom: 200px;
+    color: darkslategray;
+    z-index: 1;
 }
 
 .h2index {
-    color: lightyellow;
+    color: darkslateblue;
 }
 
 .border-top {
@@ -39,13 +43,12 @@ body {
 }
 
 .table {
-    color: lightyellow;
-    text-shadow: 2px 2px black;
-    
+    color: slategray;
+    /*text-shadow: 2px 2px black;*/
 }
 
 a {
-    color: lightyellow;
+    color: darkslategray;
     text-decoration: none;
 }
 
@@ -56,29 +59,31 @@ a:hover {
 
 .btn {
     font-family: Roboto, sans-serif;
-    font-weight: 0;
+    font-weight: 200;
     font-size: 14px;
-    color: wheat;
-    background-color: linear-gradient(360deg, #cca300 0%, #f1fa78 100%);
+    color: darkslategray;
+    background-color: lightgoldenrodyellow;
     padding: 10px 30px;
     border: solid #e3f58a 2px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
     border-radius: 50px;
     transition: 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
+    /*display: flex;*/
+    /*flex-direction: row;*/
     align-items: center;
     cursor: pointer;
-    
 }
 
-.btn:hover {
+/*.btn:hover {
     transition: 1000ms;
     padding: 10px 50px;
-    transform: translateY(-0px);
-    background: linear-gradient(360deg, #cca300 0%, #f1fa78 100%);
-    color: #0066cc;
+    
+    color: goldenrod;
     border: solid 2px #e3f58a;
-}
+}*/
 
+#searchString {
+    color: darkgray;
+    
+}

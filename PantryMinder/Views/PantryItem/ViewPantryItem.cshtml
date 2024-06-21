@@ -22,18 +22,19 @@
     </tr>
 </table>
 
-<div style="display:inline-flex">
-    <a class="btn" href="/PantryItem/UpdatePantryItem/@Model.ItemID">Update this Pantry Item</a>
+<div style="display:inline-block">
+    <a class="btn" href="/PantryItem/UpdatePantryItem/@Model.ItemID">Update</a>
 </div>
 
+<br />
+<br />
 
 
-
-<div style="display: block">
+<div style="display: inline-block">
 
     @using (Html.BeginForm("DeletePantryItem", "PantryItem", "Post"))
     {
         <input class="btn" type="hidden" asp-for="ItemID" value="@Model.ItemID" />
-        <input class="btn" type="submit" onclick="return confirm('Are you sure?')" value="Delete this pantry item" />
+        <input class="btn" type="submit" onclick="return confirm('Are you sure?')" value="Delete" />
     }
 </div>
